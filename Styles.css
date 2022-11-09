@@ -1,0 +1,153 @@
+body {
+    background-image: url("./images/bg-intro-desktop.png");
+    background-color: hsl(0, 100%, 74%);
+    color: white;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+}
+.main {
+    margin: 8rem 10rem 20rem;
+}
+.main-text {
+    width: 50%;
+    display: inline-block;
+    text-align: left;
+    padding-top: 7rem;
+}
+.info {
+    width: 50%;
+    float: right;
+    text-align: center;
+    position: relative;
+    left: 4rem;
+}
+h1 {
+    font-weight: 700;
+    font-size: 3rem;
+    line-height: 3rem;
+}
+.free-trial{
+    background-color: hsl(248, 32%, 49%);
+    height: 3rem;
+    border-radius: 0.5rem;
+}
+.free-trial p {
+    margin-bottom: 0px;
+    margin-top: 0px;
+    padding-top: 0.75rem;
+}
+.data {
+    background-color: white;
+    color: black;
+    border-radius: 0.5rem;
+    padding-top: 2rem;
+    position: relative;
+    top: 1rem;
+    padding-bottom: 1rem;
+}
+p span {
+    font-weight: 600;
+}
+input {
+    width: 27rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border-style: solid;
+    border-width: 1px;
+    margin: 0.5rem 1rem;
+    border-color: hsl(246, 25%, 77%);
+}
+input::placeholder {
+    color: hsl(246, 25%, 77%);
+    font-weight: 700;
+    padding-left: 1.5rem;
+}
+button {
+    width: 27rem;
+    height: 3rem;
+    border-radius: 0.5rem;
+    border-style: none;
+    margin: 0.5rem 1rem;
+    display: block;
+    background-color: hsl(154, 59%, 51%);
+    color: white;
+    position: relative;
+    left: 1.5rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+button:hover {
+    cursor: pointer;
+}
+.terms {
+    font-size: 0.75rem;
+    color: hsl(246, 25%, 77%);
+}
+.terms span {
+    color: hsl(0, 100%, 74%);
+    font-weight: 700;
+}
+/*active state*/
+.clicked::placeholder {
+    color: hsl(0, 100%, 74%);
+}
+.error{
+    background: url(./images/icon-error.svg)
+    no-repeat 24rem 0.75rem #ffffff;
+}
+.error-text {
+    margin: 0;
+    font-size: 0.7rem;
+    float: right;
+    color: hsl(0, 100%, 74%);
+    padding-right: 2.25rem;
+}
+.hidden {
+    display: none;
+}
+.clicked-btn {
+    background-color: hsl(154, 59%, 70%);
+}
+@media (max-width:375px) {
+    body{
+        text-align: center;
+        background-image: url("./images/bg-intro-mobile.png");
+    }
+    .main{
+        margin: 0;
+        padding: 0 1rem;
+    }
+    input{
+        width: 17rem;
+    }
+    button {
+        width: 17.5rem;
+        margin: unset;
+        left: 1.5rem;
+
+    }
+    .main-text{
+        width: 100%;
+        text-align: center;
+        padding: 5rem 0;
+    }
+    .info{
+        width: 100%;
+        float: unset;
+        position: unset;
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    .free-trial{
+        height: 5rem;
+        padding: 0 4rem;
+    }
+    .error {
+        background: url(./images/icon-error.svg) 
+        no-repeat 15rem 0.75rem #ffffff;
+    }
+    .data {
+        margin-bottom: 5rem;
+    }
+}
